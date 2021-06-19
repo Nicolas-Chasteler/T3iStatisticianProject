@@ -1,6 +1,6 @@
 # T3iStatisticianProject
 ## Intro
-For this project I used R to complete all tasks. I used functionality from the libraries 'tidyr', 'dplyr', and 'ggplot2'.
+For this project I used R to complete all tasks. I used functionality from the libraries 'tidyr', 'dplyr', and 'ggplot2'. I have additionally included the R file if you wish to run the code.
 ```
 # Load Libraries
 library(tidyr)
@@ -27,7 +27,7 @@ threemileruck.wide <- select(data, 30:32)
 # Convert 3mileruck into long format
 threemileruck.wide <- rename(threemileruck.wide, Initial = X3mileruck_initial_seconds, Mid = X3mileruck_mid_seconds, Final = X3mileruck_final_seconds)
 threemileruck.long <- gather(threemileruck.wide, Iteration, Seconds, Initial:Final)
-
+write.csv(threemileruck.long, "C:\\Users\\Nic Chasteler\\Desktop\\3mileruck.csv")
 # Exercise 1 complete saved as threemileruck.long
 ```
 ## Challenge 2
