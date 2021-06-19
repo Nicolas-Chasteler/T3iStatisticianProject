@@ -6,7 +6,7 @@ For this project I used R to complete all tasks. I used functionality from the l
 
 # TEA-SQL-Challenge-Submission
 ## Challenge 1
-I started by loading the dataset. I then used the subset command to remove any rows which were not complete. I then removed duplicate IDs by ordering the initial date and using the duplicated function. I created a subset of just the 3 mile ruck times, renamed the columns, and then converted it from a wide format to long and saved as threemileruck.long
+I started by loading the dataset. I then used the subset command to remove any rows which were not complete. I then removed duplicate IDs by ordering the initial date and using the duplicated function. I created a subset of just the 3 mile ruck times, renamed the columns, and then converted it from a wide format to long and uploaded as 3mileruck.cvs
 ```
 # Load Libraries
 library(tidyr)
@@ -35,7 +35,7 @@ threemileruck.long <- gather(threemileruck.wide, Iteration, Seconds, Initial:Fin
 # Exercise 1 complete saved as threemileruck.long
 ```
 ## Challenge 2
-I started by setting the order of the ruck data into initial, mid, then final before using ggplot to create 3 histograms of the times next to eachother.
+I started by setting the order of the ruck data into initial, mid, then final before using ggplot to create 3 histograms of the times next to eachother. A png is uploaded is Rplot.png
 ```
 # Exercise 2
 # Order into initial, mid, final
