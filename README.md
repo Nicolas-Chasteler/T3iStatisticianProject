@@ -1,9 +1,6 @@
 # T3iStatisticianProject
 ## Intro
 For this project I used R to complete all tasks. I used functionality from the libraries 'tidyr', 'dplyr', and 'ggplot2'.
-
-## Challenge 1
-I started by loading the dataset. I then used the subset command to remove any rows which were not complete. I then removed duplicate IDs by ordering the initial date and using the duplicated function. I created a subset of just the 3 mile ruck times, renamed the columns, and then converted it from a wide format to long and uploaded as 3mileruck.cvs
 ```
 # Load Libraries
 library(tidyr)
@@ -12,8 +9,10 @@ library(ggplot2)
 
 # Load dataset
 data <- read.csv("C:\\Users\\Nic Chasteler\\Desktop\\fitness_data.csv")
-
-
+```
+## Challenge 1
+I started by loading the dataset. I then used the subset command to remove any rows which were not complete. I then removed duplicate IDs by ordering the initial date and using the duplicated function. I created a subset of just the 3 mile ruck times, renamed the columns, and then converted it from a wide format to long and uploaded as 3mileruck.cvs
+```
 # Exercise 1
 # Only keep completed data points
 data <- subset(data, initial_complete == "Complete" & mid_complete == "Complete" & final_complete == "Complete")
