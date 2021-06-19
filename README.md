@@ -1,6 +1,6 @@
 # T3iStatisticianProject
 ## Intro
-For this project I used R to complete all tasks. I used functionality from the libraries 'tidyr', 'dplyr', and 'ggplot2'. I have additionally included the R file if you wish to run the code.
+For this project I used R to complete all tasks. I used functionality from the libraries 'tidyr', 'dplyr', and 'ggplot2'. I have additionally included the R file.
 ```
 # Load Libraries
 library(tidyr)
